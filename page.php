@@ -1,4 +1,8 @@
-<?php get_header() ?>
+<?php
+
+// $abc = get_the_ID();
+// echo $abc;
+get_header() ?>
 <?php 
 while (have_posts()){
     the_post(); ?>

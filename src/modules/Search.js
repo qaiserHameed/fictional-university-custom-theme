@@ -48,7 +48,7 @@ if(this.searchField.val() != this.previousValue){
     
   }
   getResults(){
-this.resultsDiv.html("Imagine real search Results here");
+
 this.isSpinnerVisible = false;
   }
 
