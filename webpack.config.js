@@ -1,3 +1,4 @@
+
 const path = require('path');
 
 module.exports = {
@@ -13,6 +14,9 @@ module.exports = {
         use: ['style-loader', 'css-loader'], // Use style-loader and css-loader
       },
     ],
+  },
+  resolve: {
+    modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
   },
   mode: 'development', // Set mode to development
 };
