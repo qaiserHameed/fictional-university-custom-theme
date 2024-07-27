@@ -28,15 +28,13 @@ while (have_posts()) {
       <li><a href="<?php echo get_the_permalink($program); ?>"><?php echo get_the_title($program); ?></a></li>
    <?php }
    };
+   
 ?>
+</div>
 
-
-
-
-
-
-
-
-
-
-        <?php }?>
+        <?php }
+        
+  ?>
+  
+        <?php
+ get_footer(); ?>
