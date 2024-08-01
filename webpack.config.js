@@ -1,22 +1,21 @@
-
 const path = require('path');
 
 module.exports = {
-  entry: './src/scripts.js', // Path to your main JavaScript file
+  mode: 'development', // Add this line
+  entry: './src/scripts.js',
   output: {
-    filename: 'bundle.js', // Name of the output bundled file
-    path: path.resolve(__dirname, 'dist'), // Output directory
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
       {
-        test: /\.css$/, // Apply this rule to .css files
-        use: ['style-loader', 'css-loader'], // Use style-loader and css-loader
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
   resolve: {
-    modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
+    extensions: ['.js', '.css'],
   },
-  mode: 'development', // Set mode to development
 };
