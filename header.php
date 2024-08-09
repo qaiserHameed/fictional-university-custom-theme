@@ -7,6 +7,7 @@
     <!-- <title>Document</title> -->
 </head>
 <body <?php  body_class(); ?>>
+<script type="module" src="<?php echo get_template_directory_uri(); ?>/dist/bundle.js"></script>
     
 <header class="site-header">
       <div class="container">

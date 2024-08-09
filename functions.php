@@ -33,7 +33,7 @@
 
     // Enqueue your script
     
-    wp_enqueue_script('main-js', get_theme_file_uri('/js/scripts.js'), array('jquery'), '1.0', true);
+    wp_enqueue_script('main-js', get_theme_file_uri('./src/scripts.js'), array('jquery'), '1.0', true);
 
 
 
